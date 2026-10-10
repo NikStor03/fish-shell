@@ -558,6 +558,10 @@ msgstr "定义于 %s @ line %d"
 msgid "Defined interactively"
 msgstr "交互时定义"
 
+#, c-format
+msgid "Defined via `%s`"
+msgstr ""
+
 msgid "Defined via `source`"
 msgstr "通过 `source` 定义"
 

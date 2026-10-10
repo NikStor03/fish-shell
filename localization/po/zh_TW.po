@@ -531,6 +531,10 @@ msgstr "定義於 %s 第 %d 行"
 msgid "Defined interactively"
 msgstr "互動地定義"
 
+#, c-format
+msgid "Defined via `%s`"
+msgstr ""
+
 msgid "Defined via `source`"
 msgstr "透過「source」定義"
 
