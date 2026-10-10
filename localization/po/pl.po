@@ -533,6 +533,10 @@ msgstr ""
 msgid "Defined interactively"
 msgstr ""
 
+#, c-format
+msgid "Defined via `%s`"
+msgstr ""
+
 msgid "Defined via `source`"
 msgstr ""
 
