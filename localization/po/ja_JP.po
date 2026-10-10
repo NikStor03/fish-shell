@@ -536,10 +536,6 @@ msgstr "%s の %d 行目で定義されています"
 msgid "Defined interactively"
 msgstr "対話的に定義されています"
 
-#, c-format
-msgid "Defined via `%s`"
-msgstr ""
-
 msgid "Defined via `source`"
 msgstr "`source` 経由で定義されています"
 

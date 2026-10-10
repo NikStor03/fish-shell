@@ -18,6 +18,7 @@ use crate::{
     wutil::dir_iter::DirIter,
 };
 use fish_common::{FilenameRef, assert_sync, escape};
+use fish_fluent::localize_fn;
 use fish_widestring::wcs2bytes;
 use std::{
     collections::{HashMap, HashSet},
@@ -368,6 +369,12 @@ pub fn invalidate_path() {
     let mut funcset = FUNCTION_SET.lock().unwrap();
     funcset.funcs.retain(|_, props| !props.is_autoload.load());
     funcset.autoloader.clear();
+}
+
+localize_fn! {
+    pub localize_defined_via_source,
+    "function-defined-via-source" = "Defined via `{ $source_command }`",
+    source_command,
 }
 
 impl FunctionProperties {

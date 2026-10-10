@@ -120,7 +120,8 @@ pub fn r#type(parser: &mut Parser, streams: &mut IoStreams, argv: &mut [&wstr]) 
                     } else if path == "-" {
                         match props.source_definition_command() {
                             Some(source_cmd) => {
-                                comment.push_utfstr(&wgettext_fmt!("Defined via `%s`", source_cmd));
+                                comment
+                                    .push_str(&function::localize_defined_via_source(&source_cmd));
                             }
                             None => comment.push_utfstr(&wgettext!("Defined via `source`")),
                         }

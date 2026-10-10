@@ -537,10 +537,6 @@ msgstr "Definido en %s @ línea %d"
 msgid "Defined interactively"
 msgstr "Definido de forma interactiva"
 
-#, c-format
-msgid "Defined via `%s`"
-msgstr ""
-
 msgid "Defined via `source`"
 msgstr "Definido mediante `source`"
 
